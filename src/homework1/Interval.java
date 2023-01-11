@@ -5,7 +5,7 @@ public class Interval {
 
 
     public Interval(String beginningText) {
-        this.beginningText=beginningText;
+        this.beginningText = beginningText;
 
     }
 }
