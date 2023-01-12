@@ -2,13 +2,13 @@ package homework1;
 
 public class Book {
     private String name;
-    private String Author;
+    private Author author;
     private String genre;
     private int dateOfWriting;
 
-    public Book(String name, String genre, String Author, int dateOfWriting) {
+    public Book(String name, String genre, Author author, int dateOfWriting) {
         this.name = name;
-        this.Author = Author;
+        this.author = author;
         this.genre = genre;
         this.dateOfWriting = dateOfWriting;
     }
@@ -23,8 +23,9 @@ public class Book {
         return this.genre;
     }
 
-    public String getAuthor() {
-        return this.Author;
+    public Author getAuthor() {
+
+        return this.author;
     }
 
     public int getDateOfWriting() {
@@ -33,6 +34,7 @@ public class Book {
     }
 
     public void setDateOfWriting(int dateOfWriting) {
+
         this.dateOfWriting = dateOfWriting;
     }
 }
