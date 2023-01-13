@@ -13,6 +13,7 @@ public class Main {
         System.out.println(book2);
 
         Author author3 = new Author("Достоевский ", "Федор");
+
         Book book3 = new Book("Идиот", author3, "Роман", 1867);
 
         System.out.println(book3);

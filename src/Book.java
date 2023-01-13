@@ -15,6 +15,7 @@ public class Book {
     }
 
     public void setYear(int dateOfWriting) {
+
         this.dateOfWriting = dateOfWriting;
     }
 
@@ -33,6 +34,7 @@ public class Book {
 
 
     public int hashCode() {
+
         return java.util.Objects.hash(name);
     }
 }
