@@ -1,21 +1,26 @@
 public class Book {
-    private String nameBook;
+    /* private String nameBook;
+     private Author author;
+     private int year;*/
+    private String name;
     private Author author;
-    private int year;
+    private String genre;
+    private int dateOfWriting;
 
-    public Book(String nameBook, int age, Author author) {
-        this.nameBook = nameBook;
-        this.year = age;
+    public Book(String name, Author author, String genre, int dateOfWriting) {
+        this.name = name;
         this.author = author;
+        this.genre = genre;
+        this.dateOfWriting = dateOfWriting;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setYear(int dateOfWriting) {
+        this.dateOfWriting = dateOfWriting;
     }
 
 
     public String toString() {
-        return "Название книги: " + nameBook + ", год выпуска: " + year + ", Автор: " + author;
+        return "Название книги: " + name + ", год выпуска: " + dateOfWriting + ", Автор: " + author + ",| Жанр-" + genre;
     }
 
 
@@ -23,11 +28,11 @@ public class Book {
         if (book == null || getClass() != book.getClass())
             return false;
         Book that = (Book) book;
-        return nameBook.equals(that.nameBook);
+        return name.equals(that.name);
     }
 
 
     public int hashCode() {
-        return java.util.Objects.hash(nameBook);
+        return java.util.Objects.hash(name);
     }
 }
