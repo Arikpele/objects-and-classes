@@ -25,10 +25,10 @@ public class Book {
     }
 
 
-    public boolean equals(Object book) {
-        if (book == null || getClass() != book.getClass())
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass())
             return false;
-        Book that = (Book) book;
+        Book that = (Book) o;
         return name.equals(that.name);
     }
 
